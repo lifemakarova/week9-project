@@ -89,3 +89,48 @@
     position: relative;
     margin-left: -45px;
 }
+
+@media screen and (max-width: 768px){
+    .header{
+        height: 950px;
+        background-image: none;
+        padding-left: 30px;
+        background-image: url(../images/product.png);
+        background-size: 709px 609px;
+        background-position: 100% 100%;
+    }
+    .header__container{
+        height: 950px;
+    }
+    .logo{
+        width: 174px;
+        height: 52px;
+    }
+    .navbar{
+        width: 440px;
+        margin-right: 30px;
+    }
+    .navbar__link{
+        color:#000000;
+        font-size: 18px;
+    }
+    .navbar__link_active{
+        border-bottom: 2px #68B738 solid;
+    }
+    .header__main{
+        flex-direction: column;
+        height: 809px;
+    }
+    .header__info{
+        margin-left: 87px;
+        margin-top: 0;
+        height: 290px;
+        justify-content: space-between;
+    }
+    .header__illustration{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+}
