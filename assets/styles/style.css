@@ -236,13 +236,13 @@
 
 /* Third block */
 
-.how_it_working{
+.process__how-it-working{
     width: 1330px;
     max-width: 100%;
     height: 100px;
     margin-left: 110px;
 }
-.how_it_working_text{
+.process__text{
     font-family: 'Oswald', sans-serif;
     font-size: 60px;
     font-weight: 375px;
@@ -256,17 +256,17 @@
     justify-content: space-around;
     max-width: 1440px;
 }
-.block_text{
+.block__text{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: 24px;
     color: #444444;
 }
-.icon_block{
+.icon__block{
     max-width: 65px;
     max-height: 65px;
 }
-.block_1{
+.block__1{
     background-image: url(../images/1.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -274,7 +274,7 @@
     height: 280px;
     padding-left: 25px;
 }
-.block_2{
+.block__2{
     background-image: url(../images/2.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -282,7 +282,7 @@
     height: 280px;
     padding-left: 25px;
 }
-.block_3{
+.block__3{
     background-image: url(../images/3.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -290,7 +290,7 @@
     height: 280px;
     padding-left: 25px;
 }
-.block_4{
+.block__4{
     background-image: url(../images/4.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -299,14 +299,14 @@
     padding-left: 25px;
 }
 @media screen and (max-width: 768px){
-    .how_it_working{
+    .process__how-it-working{
         display: flex;
         margin-left: 5px;
         margin-top: 0;
         height: 100px;
         justify-content: flex-start;
     }
-    .how_it_working_text{
+    .process__text{
         font-family: 'Oswald', sans-serif;
         font-weight: 275px;
         font-size: 40px;
@@ -319,17 +319,17 @@
         justify-content: space-around;
         max-width: 708px;
     }
-    .block_text{
+    .block__text{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 16px;
         line-height: 24px;
         color: #444444;
     }
-    .icon_block{
+    .icon__block{
         max-width: 65px;
         max-height: 65px;
     }
-    .block_1{
+    .block__1{
         background-image: url(../images/1.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -337,7 +337,7 @@
         max-height: 280px;
         padding-left: 40px;
     }
-    .block_2{
+    .block__2{
         background-image: url(../images/2.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -345,7 +345,7 @@
         max-height: 280px;
         padding-left: 40px;
     }
-    .block_3{
+    .block__3{
         background-image: url(../images/3.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -353,7 +353,7 @@
         max-height: 280px;
         padding-left: 40px;
     }
-    .block_4{
+    .block__4{
         background-image: url(../images/4.png);
         background-repeat: no-repeat;
         background-position: center;
@@ -363,12 +363,12 @@
     }
 }
     @media screen and (max-width: 320px) {
-    .how_it_working{
+    .process__how-it-working{
         display: flex;
         text-align: center;
         padding: 5px;
     }
-    .how_it_working_text{
+    .process__text{
         font-family: 'Oswald', sans-serif;
         font-weight: 100px;
         font-size: 26px;
@@ -381,7 +381,7 @@
         padding: 5px;
         justify-content: flex-start;
     }
-    .block_1, .block_2, .block_3, .block_4 {
+    .block__1, .block__2, .block__3, .block__4 {
         display: flex;
         align-items: center;
         background-image: none;
@@ -389,11 +389,11 @@
     border: 2px color black;
     height: 60px;
     }
-    .icon_block {
+    .icon__block {
         margin-right: 10px;
         padding: 10px;
     }
-.block_text{
+.block__text{
     padding: 10px;
     font-size: 10px;
     line-height: 0.9;
