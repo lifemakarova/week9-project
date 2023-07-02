@@ -248,13 +248,13 @@
     font-weight: 375px;
     line-height: 60px;
     padding-left: 90px;
-
 }
 .block{
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 1fr;
     justify-content: space-around;
+    max-width: 1440px;
 }
 .block_text{
     font-family: Arial, Helvetica, sans-serif;
@@ -266,7 +266,6 @@
     max-width: 65px;
     max-height: 65px;
 }
-
 .block_1{
     background-image: url(../images/1.png);
     background-repeat: no-repeat;
@@ -309,8 +308,8 @@
     }
     .how_it_working_text{
         font-family: 'Oswald', sans-serif;
-        font-weight: 375px;
-        font-size: 60px;
+        font-weight: 275px;
+        font-size: 40px;
         left: 5px;
     }
     .block{
@@ -367,18 +366,20 @@
     .how_it_working{
         display: flex;
         text-align: center;
+        padding: 5px;
     }
     .how_it_working_text{
         font-family: 'Oswald', sans-serif;
-        font-weight: 225px;
-        font-size: 36px;
+        font-weight: 100px;
+        font-size: 26px;
     }
     .block {
         display: flex;
         flex-wrap: wrap;
         max-width: 279px;
         max-height: 300px;
-        padding: 0,5px;
+        padding: 5px;
+        justify-content: flex-start;
     }
     .block_1, .block_2, .block_3, .block_4 {
         display: flex;
@@ -386,12 +387,16 @@
         background-image: none;
     padding: -10px;
     border: 2px color black;
+    height: 60px;
     }
     .icon_block {
         margin-right: 10px;
+        padding: 10px;
     }
 .block_text{
     padding: 10px;
+    font-size: 10px;
+    line-height: 0.9;
 }
 }
 /* Third block */
