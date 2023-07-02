@@ -354,6 +354,7 @@
     .how_it_working{
         display: flex;
         text-align: center;
+        padding: 10px;
     }
     .how_it_working_text{
         font-family: 'Oswald', sans-serif;
@@ -365,7 +366,8 @@
         flex-wrap: wrap;
         max-width: 279px;
         max-height: 300px;
-        padding: 0,5px;
+        padding: 5px;
+        justify-content: flex-start;
     }
     .block_1, .block_2, .block_3, .block_4 {
         display: flex;
@@ -373,12 +375,16 @@
         background-image: none;
     padding: -10px;
     border: 2px color black;
+    height: 60px;
     }
     .icon_block {
         margin-right: 10px;
+        padding: 10px;
     }
 .block_text{
     padding: 10px;
+    font-size: 10px;
+    line-height: 0.9;
 }
 }
 /* Third block */
