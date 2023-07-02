@@ -236,7 +236,6 @@
     font-weight: 375px;
     line-height: 60px;
     padding-left: 90px;
-
 }
 .block{
     display: grid;
@@ -255,7 +254,6 @@
     max-width: 65px;
     max-height: 65px;
 }
-
 .block_1{
     background-image: url(../images/1.png);
     background-repeat: no-repeat;
