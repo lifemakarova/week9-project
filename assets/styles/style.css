@@ -47,6 +47,14 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.navbar__link:hover{
+    cursor: pointer;
+}
+
+.navbar__link:focus{
+    outline: 3px solid #f3ae36;
+}
+
 .navbar__link_active{
     border-bottom: 2px solid white;
     padding-bottom: 8px;
@@ -88,6 +96,11 @@
 
 .header__button:hover{
     transform: scale(1.3);
+    cursor: pointer;
+}
+
+.header__button:focus{
+    outline: 3px solid #f3ae36;
 }
 
 .header__illustration{
@@ -152,6 +165,10 @@
     .header__button_mobile{
         display: none;
     }
+}
+
+.header__button_mobile:hover{
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 426px) {
