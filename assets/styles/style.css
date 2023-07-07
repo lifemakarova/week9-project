@@ -663,6 +663,10 @@
     height: 400px;
 }
 
+.example__background div {
+    padding-left: 90px;
+}
+
 .example__white {
     display: grid;
     grid-row: 1/2;
@@ -701,6 +705,8 @@
     letter-spacing: 0em;
     text-align: left;
     flood-color: #444444;
+
+    padding-left: px;
 }
 
 
