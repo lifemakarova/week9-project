@@ -650,13 +650,13 @@
 }
 
 .example div {
-    /* border: 2px grey solid; */
+    border: 2px grey solid;
 }
 
 .example__container {
     display: grid;
     /* grid-template-rows: 35% 1fr; */
-    grid-template-columns: 2fr 3fr;
+    grid-template-columns: 4fr 5fr;
     height: 100%;
 }
 
@@ -675,7 +675,6 @@
 }
 
 .example__to-read {
-    background-color: #F2F2F2;
     padding-left: 90px;
 }
 
@@ -710,7 +709,7 @@
     line-height: 24px;
     letter-spacing: 0em;
     text-align: left;
-    flood-color: #444444;
+    color: #444444;
 }
 
 /* Fourth block end */
@@ -725,10 +724,10 @@
 }
 
 #map {
-	position: relative;
-	width: 1440px;
-	height: 400px;
-	max-width: 100%;
+    position: relative;
+    width: 1440px;
+    height: 400px;
+    max-width: 100%;
 }
 
 .contacts__company--window {
@@ -899,7 +898,7 @@
         height: 114px;
         padding: 0 19px;
     }
-    
+
     #map {
         height: 320px;
     }
