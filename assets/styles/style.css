@@ -813,7 +813,6 @@
 /* Footer styles */
 
 
-
 .footer {
     width: 1440px;
     max-width: 100%;
@@ -859,6 +858,23 @@
 .footer--mobile-line {
     display: none;
 }
+
+.footer__logo--link:hover {
+    cursor: pointer;
+}
+
+.icon-social__item--link:hover {
+    cursor: pointer;
+}
+
+.footer__logo--link:focus {
+    outline: 3px solid #f3ae36;
+}
+
+.icon-social__item--link:focus {
+    outline: 3px solid #f3ae36;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -946,7 +962,6 @@
     }
 
     .contacts__title {
-        margin-right: 2px;
         font-size: 20px;
         padding-right: 0;
     }
