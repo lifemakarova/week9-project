@@ -478,9 +478,10 @@
 
     .block1,
     .block2 {
+        padding: 50px;
         background-color: #f2f2f2;
-        width: 280px;
-        height: 266px;
+        width: 355px;
+        height: 380px;
     }
 
 }
