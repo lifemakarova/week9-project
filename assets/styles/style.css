@@ -453,7 +453,6 @@
     .container {
         display: flex;
         flex-direction: column;
-        padding: 77px 60px 62px 52px;
         margin-top: 0;
         margin-bottom: 31px;
         width: 768px;
