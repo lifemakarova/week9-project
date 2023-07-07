@@ -30,13 +30,21 @@
         </ul>
         <div class="menu">
           <div class="menu__item">
-            <img src="./assets/images/logomobileimg.png" alt="Лого картирка" />
+            <img src="./assets/images/logomobileimg.png" alt="Лого картинка" />
           </div>
           <div class="menu__item">
             <img src="./assets/images/logomobiletitle.png" alt="Лого текст" />
           </div>
           <div class="menu__item">
-            <a href=""><img src="./assets/images/burgermenu.png" alt="Значок меню" /></a>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
+            <ul class="menubox">
+              <li><a class="menubox__item" href="#">Главная</a></li>
+              <li><a class="menubox__item" href="#">Каталог продукции</a></li>
+              <li><a class="menubox__item" href="#">Подбор программы</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -137,47 +145,58 @@
     </section>
 
     <section class="example">
-      <div class="example__background">
-        <div class="example__white">Живой пример</div>
-        <div class="example__grey">
-          <section class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+      <div class="example__container">
+        <div class="example__heading">Живой пример</div>
+        <div class="example__to-read">
+          <div class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
             обычный корм на Cat Energy Slim. Отличный результат
             без изнуряющих тренировок! При этом он не менял своих
-            привычек и по-прежнему спит по 16 часов в день.</section>
-          <section class="example__info">
-            <div class="example__days"></div>
-            <div class="example__weight"></div>
-            <div class="example__expenses"></div>
-            <div class="example__money"></div>
-          </section>
+            привычек и по-прежнему спит по 16 часов в день. </div>
+          <div class="example__info">
+
+            <div class="example__weight "><img src="./assets/images/module.png" alt="Количество килограмм"></div>
+            <div class="example__days"><img src="./assets/images/module2.png" alt="Количество килограмм"></div>
+            <div class="example__expenses">
+              <div class="expenses__cost">Затраты на питание:</div>
+              <div class="expenses__cost">15 000 РУБ.</div>
+            </div>
+
+          </div>
         </div>
-        <div class="example__dark-grey"></div>
+        <div class="example__visual">
+          <div class="example__image"><img src="./assets/images/example_image_cat.png" alt="Пример похудения"></div>
+        </div>
+
       </div>
 
       </div>
     </section>
     <section class="contacts">
       <div class="contacts__container">
-        <div class="contacts__company">
-          <h6 class="contacts--title">
+        <div class="contacts__company--window">
+          <h6 class="contacts__title">
             Приглашаем к сотрудничеству дилеров!
           </h6>
-          <div class="contacts--address">
-            <p class="address--street">ул. Большая Конюшенная, д. 19/8</p>
-            <p class="address">Санкт-Петербург</p>
+          <div class="contacts__address">
+            <p class="contacts__address address--street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address address--city">Санкт-Петербург</p>
           </div>
         </div>
-        <!-- <div class="map__logo">
-            <img
-              src="./assets/images/geo-teg.png"
-              alt="Метка компании на карте"
-              class="logo--geo-teg"
-            />
-          </div> -->
-        <div class="map">
-          <iframe data-aload
+        <div class="contacts__map"><iframe data-aload
             src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaf97d0229020dc6002be3669bf22aa74a4365a7d49293736d7b2578cb1c965f6&amp;source=constructor"
             width="100%" height="400" frameborder="0"></iframe>
+          <div class="map__logo-company">
+            <img src="./assets/images/geo-teg.png" alt="Метка компании на карте" class="logo-company--geo-teg" />
+          </div>
+          <div class="contacts__company">
+            <h6 class="contacts__title">
+              Приглашаем к сотрудничеству дилеров!
+            </h6>
+            <div class="contacts__address">
+              <p class="contacts__address address--street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__address address--city">Санкт-Петербург</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -186,28 +205,28 @@
     <div class="footer__container">
       <div class="footer__logo">
         <a href="#!" class="footer__logo--link"><img src="./assets/images/footer-logo.svg" alt="Логотип компании"
-            class="logo--image" /></a>
+            class="footer__logo--image" /></a>
       </div>
-      <hr class="line" />
+      <hr class="footer--mobile-line" />
       <div class="icon-social__container">
         <ul class="icon-social">
           <li class="icon-social__item">
             <a href="#!" class="icon-social__item--link"><img src="./assets/images/icon_vkontakte.svg" alt="Иконка vk"
-                class="icon-social--image" /></a>
+                class="icon-social__item--image" /></a>
           </li>
           <li class="icon-social__item">
             <a href="#!" class="icon-social__item--link"><img src="./assets/images/icon_instagram.svg"
-                alt="Иконка инстаграмм" class="icon-social--image" /></a>
+                alt="Иконка инстаграмм" class="icon-social__item--image" /></a>
           </li>
           <li class="icon-social__item">
             <a href="#!" class="icon-social__item--link"><img src="./assets/images/icon_facebook.svg" alt="Иконка FB"
-                class="icon-social--image" /></a>
+                class="icon-social__item--image" /></a>
           </li>
         </ul>
       </div>
-      <hr class="line" />
+      <hr class="footer--mobile-line" />
       <div class="footer__logo-html">
-        <p class="logo-html--title">HTML Academy</p>
+        <p class="logo-html--text">HTML Academy</p>
         <img src="./assets/images/logo-html.png" alt="Логотип" class="logo-html--images" />
       </div>
     </div>
