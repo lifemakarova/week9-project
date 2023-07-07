@@ -7,6 +7,35 @@
   <link rel="shortcut icon" href="./assets/images/mainIcon.png" type="image/png">
   <link rel="stylesheet" href="./assets/styles/normalize.css" />
   <link rel="stylesheet" href="./assets/styles/style.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b4771dc2-5e60-40c8-951e-c831a4bbe750&lang=ru_RU"></script>
+  <script>
+    ymaps.ready(function () {
+      let myMap = new ymaps.Map("map", {
+          center: [59.9386453, 30.3281541],
+          zoom: 13,
+        }),
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+        myPlacemark = new ymaps.Placemark(
+          [59.9386453, 30.3281541],
+          {
+            hintContent: "Cat Energy is here",
+            iconContent: "14",
+          },
+          {
+            iconLayout: "default#imageWithContent",
+            iconImageHref: "./assets/images/geo-teg.png",
+            iconImageSize: [113, 106],
+            iconImageOffset: [-56, -106],
+            iconContentLayout: MyIconContentLayout,
+          }
+        );
+
+      myMap.geoObjects.add(myPlacemark);
+    });
+  </script>
+
   <title>Cat energy</title>
 </head>
 
@@ -164,6 +193,11 @@
         </div>
         <div class="example__visual">
           <div class="example__image"><img src="./assets/images/example_image_cat.png" alt="Пример похудения"></div>
+          <div class="example__slider">
+            <div class="example__before">БЫЛО</div>
+            <div class="example__move"><img src="./assets/images/slider.png" alt="Слайдер"></div>
+            <div class="example__after">СТАЛО</div>
+          </div>
         </div>
 
       </div>
@@ -173,26 +207,23 @@
     <section class="contacts">
       <div class="contacts__container">
         <div class="contacts__company--window">
-          <h6 class="contacts__title">
+          <h3 class="contacts__title">
             Приглашаем к сотрудничеству дилеров!
-          </h6>
+          </h3>
           <div class="contacts__address">
             <p class="contacts__address address--street">ул. Большая Конюшенная, д. 19/8</p>
             <p class="contacts__address address--city">Санкт-Петербург</p>
           </div>
         </div>
-        <div class="contacts__map"><iframe data-aload
-            src="https://yandex.ru/map-widget/v1/?um=constructor%3Aaf97d0229020dc6002be3669bf22aa74a4365a7d49293736d7b2578cb1c965f6&amp;source=constructor"
-            width="100%" height="400" frameborder="0"></iframe>
-          <div class="map__logo-company">
-            <img src="./assets/images/geo-teg.png" alt="Метка компании на карте" class="logo-company--geo-teg" />
-          </div>
+        <div id="map">
           <div class="contacts__company">
-            <h6 class="contacts__title">
+            <h3 class="contacts__title">
               Приглашаем к сотрудничеству дилеров!
-            </h6>
+            </h3>
             <div class="contacts__address">
-              <p class="contacts__address address--street">ул. Большая Конюшенная, д. 19/8</p>
+              <p class="contacts__address address--street">
+                ул. Большая Конюшенная, д. 19/8
+              </p>
               <p class="contacts__address address--city">Санкт-Петербург</p>
             </div>
           </div>
@@ -231,5 +262,4 @@
     </div>
   </footer>
 </body>
-
 </html>
