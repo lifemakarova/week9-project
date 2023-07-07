@@ -372,10 +372,10 @@
 
 /* Второй блок */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-around;
     gap: 40px;
-    margin: 110px;
+    padding: 21px;
     font-family: 'Oswald', sans-serif;
     width: 1440px;
     max-width: 100%;
@@ -389,7 +389,7 @@
     background-color: #f2f2f2;
     width: 570px;
     height: 374px;
-    padding: 52px;
+    padding: 30px;
 }
 
 .circle-content {
@@ -447,10 +447,15 @@
     margin-left: 28px;
 }
 
+
+
 @media screen and (max-width: 768px) {
     .container {
         display: flex;
         flex-direction: column;
+        padding: 77px 60px 62px 52px;
+        margin-top: 0;
+        margin-bottom: 31px;
         width: 768px;
         max-width: 100%;
     }
@@ -461,9 +466,25 @@
         width: 708px;
         height: 372px;
     }
+
 }
 
-/* @media screen and (max-width: 426px) {} */
+@media screen and (max-width: 426px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 426px;
+        max-width: 100%;
+    }
+
+    .block1,
+    .block2 {
+        background-color: #f2f2f2;
+        width: 280px;
+        height: 266px;
+    }
+
+}
 
 /* Второй блок */
 /* Third block */
