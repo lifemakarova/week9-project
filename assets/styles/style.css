@@ -662,20 +662,21 @@
 
 /* Fourth block start */
 .example {
-    width: 1440px;
-    max-width: 100%;
+    /* width: 1440px; */
+    width: 100%;
     margin: 0;
 }
 
-/* .example div {
+.example div {
     border: 2px grey solid;
-} */
+}
 
 .example__container {
     display: grid;
     /* grid-template-rows: 35% 1fr; */
     grid-template-columns: 4fr 5fr;
     height: 100%;
+    padding-right: 5%;
 }
 
 .example__heading {
@@ -696,8 +697,9 @@
 }
 
 .example__to-read div {
-    /* border: greenyellow solid 3px; */
-    padding: 1.25em;
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-right: 2em;
 }
 
 .example__info {
@@ -711,7 +713,10 @@
     grid-column: 1/3;
 
     display: flex;
+}
 
+.expenses__sum {
+    padding-left: 5vw;
 }
 
 .example__cat {
@@ -735,23 +740,41 @@
     display: grid;
     grid-row: 1/3;
 
-    grid-template-rows: 80% 1fr;
-
+    grid-template-rows: 73% 1fr;
 }
 
 .example__image {
-
+    width: 90%;
     /* padding-right: 30%; */
     position: relative;
 }
 
 .example__image img {
+
     width: 100%;
     height: auto;
+    position: absolute;
+    bottom: 0;
 }
 
 .example__slider {
     display: flex;
+
+    padding-top: 7%;
+}
+
+.example__move {
+    width: 80%;
+}
+
+.example__move img {
+    width: 100%;
+
+}
+
+.example__before,
+.example__after {
+    padding: 2%;
 }
 
 /* Fourth block end */
