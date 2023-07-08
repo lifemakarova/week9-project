@@ -6,6 +6,34 @@
   <link rel="shortcut icon" href="./assets/images/mainIcon.png" type="image/png">
   <link rel="stylesheet" href="./assets/styles/normalize.css">
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=b4771dc2-5e60-40c8-951e-c831a4bbe750&lang=ru_RU"></script>
+  <script>
+    ymaps.ready(function () {
+      let myMap = new ymaps.Map("map", {
+          center: [59.9386453, 30.3281541],
+          zoom: 13,
+        }),
+        MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+          '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+        ),
+        myPlacemark = new ymaps.Placemark(
+          [59.9386453, 30.3281541],
+          {
+            hintContent: "Cat Energy is here",
+            iconContent: "14",
+          },
+          {
+            iconLayout: "default#imageWithContent",
+            iconImageHref: "./assets/images/geo-teg.png",
+            iconImageSize: [113, 106],
+            iconImageOffset: [-56, -106],
+            iconContentLayout: MyIconContentLayout,
+          }
+        );
+
+      myMap.geoObjects.add(myPlacemark);
+    });
+  </script>
   <title>Cat energy</title>
 </head>
 <body>
@@ -66,7 +94,7 @@
           <div class="circleheader">
             <div class="circle">
               <div class="circle-content">
-                <img src="./assets/images/cat_back_slim.png" alt="Кот" />
+                <img class="cat_back_slim" src="./assets/images/cat_back_slim.png" alt="Кот" />
                 <div class="loss">ПОХУДЕНИЕ</div>
               </div>
             </div>
@@ -87,7 +115,7 @@
           <div class="circleheader">
             <div class="circle">
               <div class="circle-content">
-                <img src="./assets/images/cat_back.png" alt="Кот" />
+                <img class="cat_back" src="./assets/images/cat_back.png" alt="Кот" />
                 <div class="gain">НАБОР МАССЫ</div>
               </div>
             </div>
