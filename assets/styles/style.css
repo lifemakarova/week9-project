@@ -654,13 +654,6 @@
         justify-content: flex-start;
     }
 
-    /* Fourth block*/
-
-    .example {
-        width: 1440px;
-        max-width: 100%;
-        margin-top: 3%;
-
     .block__1,
     .block__2,
     .block__3,
