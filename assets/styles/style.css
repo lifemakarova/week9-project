@@ -454,8 +454,8 @@
     .container {
         display: flex;
         flex-direction: column;
-        margin-top: 0;
-        margin-bottom: 31px;
+        /* margin-top: 0;
+        margin-bottom: 31px; */
         width: 768px;
         max-width: 100%;
     }
@@ -465,6 +465,7 @@
         background-color: #f2f2f2;
         width: 708px;
         height: 372px;
+        padding: 30px;
     }
 
 }
@@ -481,7 +482,6 @@
     .block1,
     .block2 {
         padding: 20px;
-
         background-color: #f2f2f2;
         width: 280px;
         height: 280px;
@@ -810,7 +810,75 @@
     }
 
     .example__expenses {
+        <<<<<<< HEAD=======grid-column: 3/5;
+        grid-row: 1/2;
+
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .example__visual {
         display: grid;
+        grid-row: 3/4;
+        grid-column: 1/2;
+        background: linear-gradient(to bottom, #ffffff 30%, #F2F2F2 30%);
+        height: 100vh;
+    }
+
+    .example__image {
+        height: 70%;
+        width: auto;
+    }
+
+    .example__image img {
+        height: 100%;
+        width: auto;
+        right: 10%;
+        bottom: 0;
+    }
+
+
+    .example__slider {
+        width: 90%;
+        display: flex;
+        padding-left: 20%;
+        padding-top: 7%;
+    }
+
+    .example__move {
+        width: 80%;
+    }
+
+    .example__move img {
+        width: 100%;
+
+    }
+
+    .example__before,
+    .example__after {
+        padding: 2%;
+        height: 2%;
+        text-decoration: underline;
+        text-decoration-color: #a8a8a8;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 321) {
+
+    .example__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% 20% 70%;
+    }
+
+    .example__heading {
+        display: grid;
+        grid-row: 1/2;
+    }
+
+    .example__to-read {
+        >>>>>>>e09f83b165e67e7121d234efa2b12d546a7d06e2 display: grid;
         grid-column: 1/3;
         grid-row: 2/3;
     }
@@ -838,11 +906,145 @@
 
     .example__visual {
         display: grid;
-        grid-row: 1/3;
+        <<<<<<< HEAD grid-row: 1/3;
         grid-column: 2/3;
         grid-template-rows: 73% 1fr;
         padding-right: 10%;
 
+        =======grid-row: 3/4;
+    }
+
+    .example__expenses {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+}
+
+
+/* Fifth block */
+
+.contacts__container {
+    width: 1440px;
+    max-width: 100%;
+    height: 400px;
+}
+
+#map {
+    position: relative;
+    width: 1440px;
+    height: 400px;
+    max-width: 100%;
+}
+
+.contacts__company--window {
+    display: none;
+}
+
+.contacts__company {
+    display: flex;
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    top: 95px;
+    right: 760px;
+    bottom: 104px;
+    left: 110px;
+    padding: 66px 50px 51px 76px;
+    z-index: 1;
+    background-color: #ffffff;
+}
+
+.contacts__title {
+    text-transform: uppercase;
+    padding-right: 87px;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #444444;
+}
+
+.address--street {
+    margin-bottom: 19px;
+}
+
+/* Footer */
+
+.footer {
+    width: 1440px;
+    max-width: 100%;
+    height: 149px;
+    background-color: #F2F2F2;
+}
+
+.footer__container {
+    width: 1440px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 57px;
+}
+
+.icon-social {
+    display: flex;
+    align-items: center;
+}
+
+.icon-social__item {
+    list-style: none;
+    padding-right: 25px;
+}
+
+.icon-social__item:last-child {
+    padding-right: 0;
+}
+
+.footer__logo-html {
+    display: flex;
+    align-items: center;
+}
+
+.logo-html--text {
+    padding-right: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #444444;
+}
+
+.footer--mobile-line {
+    display: none;
+}
+
+.footer__logo--link:hover {
+    cursor: pointer;
+}
+
+.icon-social__item--link:hover {
+    cursor: pointer;
+}
+
+.footer__logo--link:focus {
+    outline: 3px solid #f3ae36;
+}
+
+.icon-social__item--link:focus {
+    outline: 3px solid #f3ae36;
+}
+
+@media screen and (max-width: 768px) {
+    .contacts__container {
+        width: 768px;
+        max-width: 100%;
+        height: 601px;
+        >>>>>>>e09f83b165e67e7121d234efa2b12d546a7d06e2
     }
 
     .example__image {
