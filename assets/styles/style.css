@@ -1090,17 +1090,7 @@
     }
 
     .contacts__company {
-        display: flex;
-        position: absolute;
-        width: 570px;
-        height: 201px;
-        top: 95px;
-        right: 760px;
-        bottom: 104px;
-        left: 110px;
-        padding: 66px 50px 51px 76px;
-        z-index: 1;
-        background-color: #FFFFFF;
+        display: none;
     }
 
     .contacts__title {
