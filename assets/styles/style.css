@@ -370,7 +370,8 @@
     }
 }
 
-/* Второй блок */
+/* Second block */
+
 .container {
     display: flex;
     justify-content: space-evenly;
@@ -521,7 +522,6 @@
         text-align: center;
     }
 
-    /* Второй блок */
     /* Third block */
 
     .process__how-it-working {
@@ -714,9 +714,8 @@
         }
     }
 
-    /* Third block */
+    /* Fourth block*/
 
-    /* Fourth block start */
     .example {
         width: 1440px;
         max-width: 100%;
@@ -885,14 +884,11 @@
             display: grid;
             grid-row: 3/4;
         }
-
-
     }
 
-    /* Fourth block end */
 
 
-    /* Contacts styles */
+    /* Fifth block */
 
     .contacts__container {
         width: 1440px;
@@ -945,7 +941,7 @@
     }
 
 
-    /* Footer styles */
+    /* Footer*/
 
 
     .footer {
