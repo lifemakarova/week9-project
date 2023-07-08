@@ -487,15 +487,12 @@
 
 }
 
-/* Второй блок */
 /* Third block */
 
 .process__how-it-working {
     width: 1330px;
     max-width: 100%;
     height: 100px;
-
-    /* Third block */
 }
 
 .process__text {
@@ -688,9 +685,6 @@
     }
 }
 
-/* Third block */
-
-/* Fourth block start */
 .example {
     width: 1440px;
     max-width: 100%;
@@ -912,13 +906,7 @@
         }
     }
 
-
-
     /* Fifth block */
-/* Fourth block end */
-
-
-/* Contacts styles */
 
 .contacts__container {
     width: 1440px;
@@ -970,9 +958,7 @@
     margin-bottom: 19px;
 }
 
-
-/* Footer styles */
-
+/* Footer */
 
 .footer {
     width: 1440px;
@@ -1036,8 +1022,6 @@
     outline: 3px solid #f3ae36;
 }
 
-
-
 @media screen and (max-width: 768px) {
     .contacts__container {
         width: 768px;
@@ -1084,10 +1068,6 @@
     .address--street {
         margin-bottom: 19px;
     }
-
-
-    /* Footer*/
-
 
     .footer {
         width: 1440px;
