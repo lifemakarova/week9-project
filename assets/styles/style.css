@@ -882,6 +882,10 @@
     .example__expenses {
         grid-column: 3/5;
         grid-row: 1/2;
+
+        display: flex;
+        flex-direction: column;
+        text-align: end;
     }
 
     .example__visual {
@@ -904,30 +908,30 @@
         bottom: 0;
     }
 
-}
 
-.example__slider {
-    width: 90%;
-    display: flex;
-    padding-left: 20%;
-    padding-top: 7%;
-}
+    .example__slider {
+        width: 90%;
+        display: flex;
+        padding-left: 20%;
+        padding-top: 7%;
+    }
 
-.example__move {
-    width: 80%;
-}
+    .example__move {
+        width: 80%;
+    }
 
-.example__move img {
-    width: 100%;
+    .example__move img {
+        width: 100%;
 
-}
+    }
 
-.example__before,
-.example__after {
-    padding: 2%;
-    height: 2%;
-    text-decoration: underline;
-    text-decoration-color: #a8a8a8;
+    .example__before,
+    .example__after {
+        padding: 2%;
+        height: 2%;
+        text-decoration: underline;
+        text-decoration-color: #a8a8a8;
+    }
 }
 
 @media (max-width: 768px) and (min-width: 321) {
@@ -992,7 +996,7 @@
     left: 110px;
     padding: 66px 50px 51px 76px;
     z-index: 1;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }
 
 .contacts__title {
